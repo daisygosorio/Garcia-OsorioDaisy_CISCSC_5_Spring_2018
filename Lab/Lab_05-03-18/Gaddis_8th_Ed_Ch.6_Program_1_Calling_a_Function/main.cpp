@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Daisy Garcia-Osorio
  * Created on April 24, 2018, 11:27 AM
- * Purpose:  All Concepts for Chapter 6
+ * Purpose:  
  */
 
 //System Libraries Here
@@ -24,7 +24,7 @@ bool isLpYr(unsigned short);
 char gtCntVl(unsigned int);
 char gtYrVal(unsigned int); 
 char gtMnVal(char, unsigned int);
-string dyOfwk(char, char, unsigned int);
+string dyofwk(char, char, unsigned int);
 
 //Program Execution Begins Here
 int main(int argc, char** argv) {
@@ -42,8 +42,6 @@ int main(int argc, char** argv) {
     //Process/Calculations Here
     day=cnvDay(sDay);
     month=cnvMonth(sMonth);
-    cout<<year<<"Is Leap Year?->"<<isLpYr(year)?"True":"False"<<endl;
-    cout<<static_cast<int>(gtR))
     
     cout<<static_cast<int>(gtYrVal(year)<<endl;
     //Testing Function
@@ -59,16 +57,12 @@ int main(int argc, char** argv) {
     }
     
     //Output Located Here
-    cout<<"The date is " 
-            <<static_cast<int>(month)<<" / "
+    cout<<"The date is "
+            <<static_cast<int><<sMonth<<" / "
             <<static_cast<int>(day)<<"/ "<<year<<endl;
-    cout<<"The day of the week = "
-            <<dyOfWk(month,day,year)<<endl;
-            
     //Exit
     return 0;
 }
-
 char gtMnVal(char month, unsigned int year){
     switch (month){
         case1:{
@@ -101,8 +95,7 @@ char gtCntVl(unsigned int year){
     return 2*(3-year%4);
 }
 bool isLpYr(unsigned short year){
-    return ((year%400==0)||({year%4==0}&&(!(year%100==0))));
-
+    return((year%400==0)||{{year%4==0}&&(!(year%100==0)));
 }
 
 unsigned char cnvMonth(string sMonth){
@@ -117,6 +110,7 @@ unsigned char cnvMonth(string sMonth){
     if(sMonth=="September")return 9;
     if(sMonth=="October")return 10;
     if(sMonth=="November")return 11;
+    if(sMonth=="December ")return 12;
     return 12;
 
 }
