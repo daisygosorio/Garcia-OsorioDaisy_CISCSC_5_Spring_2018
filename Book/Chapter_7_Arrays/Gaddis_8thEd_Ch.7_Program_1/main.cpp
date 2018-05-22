@@ -21,6 +21,10 @@ int main(int argc, char** argv) {
     //Declare all Variables Here
     const int numEmpy=6;//Number of Employees =6
     int hours[numEmpy];
+    
+    /*Note:
+     * array hours being used to store and display values entered by user
+     */
    
     //Input the Number of Hours Worked by Each Employee
     cout<<"Enter the Number of Hours Worked by Each Employee"<<endl;
