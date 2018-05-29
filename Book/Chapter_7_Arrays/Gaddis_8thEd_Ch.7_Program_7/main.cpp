@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Daisy Garcia-Osorio
  * Created on May 29, 2018, 10:20 AM
- * Purpose:  
+ * Purpose:  This program initializes a string array
  */
 
 //System Libraries Here
@@ -22,13 +22,18 @@ using namespace std;
 
 //Program Execution Begins Here
 int main(int argc, char** argv) {
-    //Declare all Variables Here
-    
+    //This is an example of a string array that is initialized with strings
+    const int SIZE=9;
+    string planets[SIZE]={"Mercury","Venus","Earth","Mars","Jupiter",
+                          "Saturn","Uranus","Neptune",
+                          "Pluto (a dwarf planet)"};
+   
     //Input or initialize values Here
     
-    
     //Process/Calculations Here
-   
+    cout<<"Here are the planets"<<endl;
+    for (int count=0;count<SIZE;count++)
+        cout<<planets[count]<<endl;
     
     //Output Located Here
    
